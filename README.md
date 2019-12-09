@@ -30,8 +30,7 @@
 ## Status
 Project is: _in progress_
 
-## Inspiration
-Add here credits. Project based on PlatziVideo App 
+
 ## Contact
 Created by [@carlosalb94] (carlos.a.alberto94@gmail.com)
 
