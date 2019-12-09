@@ -9,19 +9,17 @@
     <title>PlatziVideo Resgister</title>
 </head>
 <body>
-   <header class="header">
-       <img class="header__logo" src="/assets/logo-platzi-video-BW2.png">
-   </header> 
+   <header class="header"></header>
    <section class="login">
        <div class="login__container">
            <h2>Registrate</h2>
-           <form class="login__container--input">
-               <input id="#user" class="input" type="text" placeholder="Nombre">
-               <input id="#email" class="input" type="text" placeholder="E-mail">
-               <input  id="#password"  class="input" type="password" placeholder="Contraseña">
-               <button id="#button" class="button">Registrarse</button>
+           <form action="" class="login__container--input">
+               <input name="user" class="input user" type="text" placeholder="Nombre">
+               <input name="email" class="input email" type="text" placeholder="E-mail">
+               <input  name="password"class="input pass" type="password" placeholder="Contraseña">
+               <button class="button">Registrarse</button>
            </form>
-           <a href="/platzi-video.html">Inicia Sesion</a>
+           <a href="/index.html">Inicia Sesion</a>
        </div>
    </section>
    <footer class="footer">
@@ -29,6 +27,6 @@
        <a href="/">Declaracion de privacidad</a>
        <a href="/">Centro de ayuda</a>
    </footer>
-   <script type="module" src="/register.js"></script>
+   <script  src="/src/js/register.js"></script>
 </body>
 </html>
