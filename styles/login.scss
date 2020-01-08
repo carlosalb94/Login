@@ -26,9 +26,6 @@ body{
     min-height: calc(110vh - 180px)
 }
 
-.login__container h2{
-    margin: 0px;
-}
 .login__container{
     display: flex;
     justify-content: space-around;
@@ -49,7 +46,8 @@ body{
     > a:hover{
         text-decoration: underline;
         font-size: 16px;}
-
+    h2 {
+        margin: 0px;}
 }
 .login__container--input{
     display: flex;
@@ -89,80 +87,77 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 25px 0;
-}
+    label {
+        font-size: 17px;
+    }
+    a {
+        color:white;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 
-.login__container--remember-me label{
-    font-size: 17px;
-}
-.login__container--remember-me a{
-    color:white;
-    text-decoration: none;
-    font-size: 17px;
-}
-.login__container--remember-me a:hover{
-    text-decoration: underline;
 }
 
 .login__container--social{
     margin: 25px 0px;
+    > div {
+        display: flex;
+        align-items: center;
+        margin-bottom:25px;
+        font-size:17px;
+    }
+    > div > img {
+        width: 30px;
+        margin-right:5px;
+    }
 }
 
-
-.login__container--social > div{
-    display: flex;
-    align-items: center;
-    margin-bottom:25px;
-    font-size:17px;
-}
-.login__container--social > div > img{
-    width: 30px;
-    margin-right:5px;
-}
 .login__container--register{
     font-size: 17px;
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 }
-.login__container--register a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-.login__container--register a:hover{
-    text-decoration: underline;
-}
+
 .footer{
     height: 100px;
     background-color: #AB88FF;
     display:flex;
     align-items: center;
     widows: 100%;
-    
-}
-
-.footer > a{
-    text-decoration:none;
-    color: white;
-    margin-right: 10px;
-    font-size:16px;
-    padding-left: 30px;
-}
-
-.footer > a:hover{
-    text-decoration:underline;
-}
-
-@media only screen and (max-width:600px) {
-    
-    .login__container{
-        background:transparent;
-        border:none;
-        padding:0px;
-        margin: 0px 30px;
-        width: 100%;
-        -webkit-box-shadow:none; 
-        box-shadow: none
+    > a {
+        text-decoration:none;
+        color: white;
+        margin-right: 10px;
+        font-size:16px;
+        padding-left: 30px;
     }
-    .footer{
-        align-items: flex-start;
-        flex-direction: column;
+    > a:hover {
+        text-decoration:underline;
+    }
+    @media only screen and (max-width:600px) {
+    
+        .login__container{
+            background:transparent;
+            border:none;
+            padding:0px;
+            margin: 0px 30px;
+            width: 100%;
+            -webkit-box-shadow:none; 
+            box-shadow: none
+        }
+        .footer{
+            align-items: flex-start;
+            flex-direction: column;
+        }
     }
 }
+
