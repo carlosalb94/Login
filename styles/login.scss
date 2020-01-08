@@ -42,21 +42,19 @@ body{
     padding:20px;
     -webkit-box-shadow: 0px 6px 15px 5px rgba(0,0,0,0.6); 
     box-shadow: 0px 6px 15px 5px rgba(0,0,0,0.6);
+    > a{
+        text-align: center;
+        color: white;
+        text-decoration: none;}
+    > a:hover{
+        text-decoration: underline;
+        font-size: 16px;}
+
 }
 .login__container--input{
     display: flex;
     flex-direction: column;   
 } 
-.login__container > a{
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
-
-.login__container > a:hover{
-    text-decoration: underline;
-    font-size: 16px;
-}
 
 .input{
     padding-left:12px;
