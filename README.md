@@ -6,7 +6,6 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Status](#status)
-* [Inspiration](#inspiration)
 * [Contact](#contact)
 
 ## General info
@@ -17,12 +16,11 @@
 ### Project is created with:
 * Javascript
 * HTML
-* CSS
 * CSS preprocessor: SASS version 1.23.0 
 
 ## Setup to run the application:
 * Install VsCode and Live Server extension for VsCode
-* Install Sass using npm:  `` npm install -g sass``
+* Install Sass using npm:  `` npm install sass``
 * Run the file index.html using the live server extension
 #### Offcial Sass Documentation:
 [Sass] (https://sass-lang.com/documentation)
