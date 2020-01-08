@@ -115,7 +115,7 @@ body {
   margin-bottom: 25px;
   font-size: 17px;
 }
-.login__container--social > div > img {
+.login__container--social > div img {
   width: 30px;
   margin-right: 5px;
 }

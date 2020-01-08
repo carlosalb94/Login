@@ -2,11 +2,12 @@ $text-border-color : #fff;
 $primary-color: #35d474;
 $secondary-color: #AB88FF;
 
-body{
+body {
     margin: 0px;
     font-family: 'Muli', sans-serif;
 }
-.header{
+
+.header {
     margin: 0;
     align-items: center;
     color: $text-border-color;
@@ -18,48 +19,53 @@ body{
     background-color: $primary-color;
 }
 
-.header__logo{
+.header__logo {
     width: 310px;
     margin-left: 30px;
 }
-.login{
+
+.login {
     background: linear-gradient($primary-color,$secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: calc(110vh - 180px)
+    min-height: calc(110vh - 180px);
 }
 
-.login__container{
+.login__container {
     display: flex;
     justify-content: space-around;
-    flex-direction:column;
+    flex-direction: column;
     color: $text-border-color;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 40px;
     min-height: 700px;
     width: 300px;
     border: 2px solid $text-border-color;
-    padding:20px;
+    padding: 20px;
     -webkit-box-shadow: 0px 6px 15px 5px rgba(0,0,0,0.6); 
     box-shadow: 0px 6px 15px 5px rgba(0,0,0,0.6);
-    > a{
+    > a {
         text-align: center;
         color: $text-border-color;
-        text-decoration: none;}
-    > a:hover{
-        text-decoration: underline;
-        font-size: 16px;}
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            font-size: 16px;
+        }
+    }
     h2 {
-        margin: 0px;}
+        margin: 0px;
+    }
 }
-.login__container--input{
+
+.login__container--input {
     display: flex;
     flex-direction: column;   
 } 
 
-.input{
-    padding-left:12px;
+.input {
+    padding-left: 12px;
     color: $text-border-color;
     height: 30px;
     background: transparent;
@@ -68,25 +74,25 @@ body{
     border-bottom: 2px solid $text-border-color;
 } 
 
-::placeholder{
+::placeholder {
     color:$text-border-color;
     font-size: 17px;
 }
 
-.button{
+.button {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     height: 40px;
-    border:none;
+    border: none;
     color: $text-border-color;
     font-size: 17px;
-    font-weight:bold;
+    font-weight: bold;
     font-family: 'Muli', sans-serif;
-    cursor:pointer;
+    cursor: pointer;
     letter-spacing: 1px;    
 } 
 
-.login__container--remember-me{
+.login__container--remember-me {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,43 +101,42 @@ body{
         font-size: 17px;
     }
     a {
-        color:$text-border-color;
+        color: $text-border-color;
         text-decoration: none;
         font-size: 17px;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-
+        &:hover {
+            text-decoration: underline;
+        }
+    }   
 }
 
-.login__container--social{
+.login__container--social {
     margin: 25px 0px;
     > div {
         display: flex;
         align-items: center;
-        margin-bottom:25px;
-        font-size:17px;
-    }
-    > div > img {
-        width: 30px;
-        margin-right:5px;
+        margin-bottom: 25px;
+        font-size: 17px;
+        img {
+           width: 30px;
+           margin-right: 5px;
+        }
     }
 }
 
-.login__container--register{
+.login__container--register {
     font-size: 17px;
     a {
         text-decoration: none;
         color: $text-border-color;
         font-weight: bold;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
+        &:hover {
+            text-decoration: underline;
+        }
+    }    
 }
 
-.footer{
+.footer {
     height: 100px;
     background-color: $secondary-color;
     display:flex;
@@ -143,22 +148,23 @@ body{
         margin-right: 10px;
         font-size:16px;
         padding-left: 30px;
-    }
-    > a:hover {
-        text-decoration:underline;
+        &:hover {
+            text-decoration:underline;
+        }
     }
     @media only screen and (max-width:600px) {
     
-        .login__container{
-            background:transparent;
-            border:none;
-            padding:0px;
+        .login__container {
+            background: transparent;
+            border: none;
+            padding: 0px;
             margin: 0px 30px;
             width: 100%;
-            -webkit-box-shadow:none; 
-            box-shadow: none
+            -webkit-box-shadow: none; 
+            box-shadow: none;
         }
-        .footer{
+
+        .footer { 
             align-items: flex-start;
             flex-direction: column;
         }
