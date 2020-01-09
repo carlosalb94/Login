@@ -1,31 +1,34 @@
 
-var form = document.querySelector("form");
-var userList = localStorage.getItem("users");
-var arrList; 
-form.addEventListener('submit', (e)=> {e.preventDefault(); validateFields()})
+const form = document.querySelector("form");
+let arrList = JSON.parse(localStorage.getItem("users"));
+form.addEventListener('submit', (e)=> {
+    e.preventDefault(); validateFields()
+})
 
 
 function validateFields() {
-    var user = document.querySelector(".input.user").value;
-    var email = document.querySelector(".input.email").value;
-    var password = document.querySelector("input.pass").value;
-    if ((user != null || "" ) && (email != null || "") && (password != null || "")) {
-        let newUs = {"user":user,"email":email,"password":password};
+    const user = document.querySelector(".input.user").value;
+    const email = document.querySelector(".input.email").value;
+    const password = document.querySelector("input.pass").value;
+    if ((user != "" || undefined ) && (email != null || "") && (password != null || "")) {
+        const newUs = {
+            "user":user,
+            "email":email,
+            "password":password
+        };
         registerUser(newUs);
     }
 }
 
 
-function registerUser(newUs) {
-    if (userList == null) {
+const registerUser = newUs => {
+    if (!arrList) {
         arrList = [];
+    }
+    if (newUs) {
         arrList.push(newUs);
-    } else {
-        arrList = JSON.parse(userList);
-        arrList.push(newUs);
-    } 
-       
-    localStorage.setItem("users", JSON.stringify(arrList));
-    window.location.href='/index.html';  
+        localStorage.setItem("users", JSON.stringify(arrList));
+        window.location.href='/index.html';  
+    }
    
 }
