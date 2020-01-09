@@ -22,6 +22,7 @@
 * Install VsCode and Live Server extension for VsCode
 * Install Sass using npm:  `` npm install sass``
 * Run the file index.html using the live server extension
+* Live preview: https://login-tan-six.now.sh/index.html
 #### Offcial Sass Documentation:
 [Sass] (https://sass-lang.com/documentation)
 
